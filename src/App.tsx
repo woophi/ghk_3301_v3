@@ -18,25 +18,32 @@ import { useEventListener } from './useEventListener';
 
 const data = [
   {
-    colors: ['#AA2530', '#2C2D31'],
-    img: brelok,
-    imgBg: '#F9DFE0',
+    colors: ['#AA2530', '#2C2D31', '#8F795F'],
+    img: braslet,
+    imgBg: '#DAD4CF',
     price: 5000,
-    title: 'Кожаный брелок',
+    title: 'Браслет',
+  },
+  {
+    colors: [],
+    img: kulon,
+    imgBg: '#DACFCF',
+    price: 5000,
+    title: 'Браслет с шармом',
   },
   {
     colors: ['#AA2530', '#2C2D31'],
     img: chehol,
     imgBg: '#A3A7B7',
     price: 5000,
-    title: 'Чехол на смартфон',
+    title: 'Чехол на iPhone',
   },
   {
-    colors: ['#AA2530', '#2C2D31', '#8F795F'],
-    img: braslet,
-    imgBg: '#DAD4CF',
+    colors: ['#AA2530', '#2C2D31'],
+    img: brelok,
+    imgBg: '#F9DFE0',
     price: 5000,
-    title: 'Тканевый браслет',
+    title: 'Брелок',
   },
   {
     colors: ['#FFFFFF', '#2C2D31', '#F9DFE0'],
@@ -44,13 +51,6 @@ const data = [
     imgBg: '#CFD9DA',
     price: 5000,
     title: 'Керамическое кольцо',
-  },
-  {
-    colors: [],
-    img: kulon,
-    imgBg: '#DACFCF',
-    price: 5000,
-    title: 'Кулон',
   },
 ];
 
