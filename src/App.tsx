@@ -19,18 +19,11 @@ import { sendDataToGA } from './utils/events';
 
 const data = [
   {
-    colors: ['#AA2530', '#2C2D31'],
-    img: brelok,
-    imgBg: '#F9DFE0',
-    price: 2990,
-    title: 'Брелок',
-  },
-  {
-    colors: ['#AA2530', '#2C2D31'],
-    img: chehol,
-    imgBg: '#A3A7B7',
-    price: 12990,
-    title: 'Кожаный чехол на iPhone',
+    colors: [],
+    img: kulon,
+    imgBg: '#DACFCF',
+    price: 7590,
+    title: 'Браслет с шармом',
   },
   {
     colors: ['#AA2530', '#2C2D31', '#8F795F'],
@@ -47,11 +40,18 @@ const data = [
     title: 'Керамическое кольцо',
   },
   {
-    colors: [],
-    img: kulon,
-    imgBg: '#DACFCF',
-    price: 7590,
-    title: 'Браслет с шармом',
+    colors: ['#AA2530', '#2C2D31'],
+    img: chehol,
+    imgBg: '#A3A7B7',
+    price: 12990,
+    title: 'Кожаный чехол на iPhone',
+  },
+  {
+    colors: ['#AA2530', '#2C2D31'],
+    img: brelok,
+    imgBg: '#F9DFE0',
+    price: 2990,
+    title: 'Брелок',
   },
 ];
 
