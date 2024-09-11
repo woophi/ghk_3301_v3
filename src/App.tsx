@@ -15,6 +15,7 @@ import { LS, LSKeys } from './ls';
 import { appSt } from './style.css';
 import { ThxLayout } from './thx/ThxLayout';
 import { useEventListener } from './useEventListener';
+import { sendDataToGA } from './utils/events';
 
 const data = [
   {
@@ -78,19 +79,14 @@ export const App = () => {
     }
 
     setLoading(true);
-    setThx(true);
-    setLoading(false);
-    // sendDataToGA({
-    //   autopayments: Number(checked) as 1 | 0,
-    //   limit: Number(checked2) as 1 | 0,
-    //   limit_sum: limit ?? 0,
-    //   insurance: Number(checked3) as 1 | 0,
-    //   email: email ? 1 : 0,
-    // }).then(() => {
-    //   LS.setItem(LSKeys.ShowThx, true);
-    //   setThx(true);
-    //   setLoading(false);
-    // });
+    sendDataToGA({
+      accessory: data.find(d => d.title === checkedItem)?.title ?? '',
+      price: data.find(d => d.title === checkedItem)?.price ?? 0,
+    }).then(() => {
+      LS.setItem(LSKeys.ShowThx, true);
+      setThx(true);
+      setLoading(false);
+    });
   }, [checkedItem]);
 
   if (thxShow) {
