@@ -16,7 +16,6 @@ export const BoxItem = ({ checked, colors, img, imgBg, onClick, price, title }: 
   return (
     <div className={bISt.box} onClick={onClick}>
       <div className={bISt.imgBox} style={{ backgroundColor: imgBg }}>
-        <div className={bISt.tag}>NFC-чип</div>
         <img src={img} className={bISt.img} />
         {colors.length ? (
           <div className={bISt.colors}>

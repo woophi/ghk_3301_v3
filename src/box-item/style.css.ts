@@ -7,25 +7,11 @@ const box = style({
 const imgBox = style({
   position: 'relative',
   display: 'flex',
-  justifyContent: 'space-between',
+  justifyContent: 'flex-end',
   height: '160px',
   overflow: 'hidden',
   borderRadius: '1rem',
   flexDirection: 'column',
-});
-
-const tag = style({
-  borderRadius: '12px',
-  padding: '4px 8px',
-  backgroundColor: '#fff',
-  margin: '1rem',
-  fontSize: '1rem',
-  lineHeight: '24px',
-  textAlign: 'center',
-  height: '32px',
-  position: 'relative',
-  zIndex: 2,
-  width: 'max-content',
 });
 
 const img = style({
@@ -67,7 +53,6 @@ const checkbox = style({
 export const bISt = {
   box,
   imgBox,
-  tag,
   img,
   colorBox,
   colors,
